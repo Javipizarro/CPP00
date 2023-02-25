@@ -24,7 +24,7 @@ fclean: clean
 
 re:	fclean all
 
-git: clean
+git: fclean
 	git add .
 	git commit -m "$m"
 	git push

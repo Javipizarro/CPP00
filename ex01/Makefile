@@ -27,18 +27,7 @@ fclean: clean
 
 re:	fclean all
 
-git: clean
+git: fclean
 	git add .
 	git commit -m "$m"
 	git push
-
-####	TESTS	####
-#test1:
-#	./$(NAME)
-#
-#test2:
-#	./$(NAME)"shhhhh... I think the students are asleep..."
-#
-#test3:
-#	./$(NAME) Damnit " ! " "Sorry students, I thought this thing was off."
-
